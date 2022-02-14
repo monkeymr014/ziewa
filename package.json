@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "aos": "^2.3.4",
+    "npm-mailer": "^1.2.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-fullpage.js": "^0.1.7",

@@ -3,13 +3,17 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import VueFullPage from 'vue-fullpage.js'
-Vue.use(VueFullPage);
-Vue.config.productionTip = false
+Vue.use(VueFullPage)
 
 new Vue({
     router,
     store,
-    render: function(h) { return h(App) }
+    render: (h) => h(App),
+    mounted() {
+        AOS.init()
+    },
 }).$mount('#app')
