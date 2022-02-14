@@ -4,10 +4,12 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
+import VueFullPage from 'vue-fullpage.js'
+Vue.use(VueFullPage);
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  store,
-  render: function (h) { return h(App) }
+    router,
+    store,
+    render: function(h) { return h(App) }
 }).$mount('#app')
